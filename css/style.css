@@ -101,7 +101,7 @@ main {
 }
 
 .item__logo {
-    background: url(icon1/logo-white.svg) center no-repeat;
+    background: url(../icon1/logo-white.svg) center no-repeat;
     height: 96.5px;
     position: relative;
 }
