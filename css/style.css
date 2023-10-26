@@ -83,8 +83,9 @@ button:focus {
 }
 
 main {
-    max-width: 100%;
     position: relative;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* header */
@@ -464,7 +465,6 @@ main {
 /* section black-background */
 
 .black__bg {
-    height: 4513px;
     width: 1270px;
     margin: 0 auto;
 }
@@ -473,9 +473,8 @@ main {
 
 .ticker {
     position: relative;
-    height: 140px;
-    left: calc(-50vw + 50%);
-    margin: 108px 0 31px 0;
+    margin: 108px 0 100px 0;
+    overflow: hidden;
 }
   
 .ticker__wrapper {
@@ -923,26 +922,29 @@ main {
 /* section mailer */
 
 .container__mailer {
-    width: 2160px;
-    height: 1263px;
-    background: url(/img1/mailer__bg.png) center center/cover no-repeat;
-    transform: translateX(-22%);
-    padding: 709px 419px 119px 482px;
+    display: flex;
+    max-width: 1920px;
+    height: 1013px;
+    padding-bottom: 50px;
+    align-items: flex-end;
+    background: url(/img1/mailer__bg.png) center no-repeat;
+    background-size: contain;
 }
 
 .form__mailer {
-    width: 1263px;
-    height: 435px;
-    background-color: #F5F6FF;
-    border-radius: 52px;
+    max-width: 1263px;
+    max-height: 435px;
+    margin: 0 auto;
     padding: 72px 120px;
+    border-radius: 52px;
+    background-color: #F5F6FF;
 }
 
 .mailer {
-    position: relative;
-    margin-top: 56px;
-    display: flex;
-    justify-content: space-between;
+    /* position: relative; */
+    /* margin-top: 56px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .container__break__mailer {
@@ -992,12 +994,16 @@ main {
 }
 
 .mailer button {
-    position: absolute;
+    /* position: absolute; */
     width: 367px;
     height: 81px;
     color:#F5F6FF;
     bottom: 0;
     right: 0;
+}
+
+.mailer__title {
+    padding-bottom: 56px;
 }
 
 /* footer */
